@@ -1,6 +1,6 @@
 Simple naive tail -f
 -----
-
+in this example we write out the pos when the application goes down, so we can pick up where we left off
 ```
 func cleanup(name string, offset *int64) {
 	ioutil.WriteFile(name, []byte(strconv.FormatInt(*offset, 10)), 0755)
